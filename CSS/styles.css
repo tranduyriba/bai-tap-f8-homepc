@@ -1,0 +1,62 @@
+button {
+    margin: 20px 0px;
+}
+
+.mennu-li>li {
+    margin-bottom: 10px;
+    line-height: 30px;
+    list-style: none;
+}
+
+/* ul {
+    padding-left: 0px;
+} */
+.header,
+.footer {
+    font-size: 25px;
+}
+
+.sidebar {
+    font-size: 20px;
+}
+
+.main-menu {
+    padding: 50px 50px;
+    border-radius: 12px;
+    background-color: antiquewhite;
+    margin: 50px 50px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+tr,
+td {
+    width: auto;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px 10px;
+}
+
+tr:hover {
+    background-color: aquamarine;
+}
+
+.table-menu {
+    text-align: center;
+    font-weight: 700;
+}
+
+.head-page {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
