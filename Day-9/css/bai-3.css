@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    margin: 40px auto;
+    padding: 50px;
+    /* border: 1px solid red; */
+    width: 800px;
+    background: rgb(234, 236, 234);
+    border-radius: 12px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+p {
+    text-align: center;
+}
+.du-lieu {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px ;
+    justify-content:space-between;
+    /* border: 1px solid red; */
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+.form-1 {
+    margin-top: 30px;
+    position: relative;
+}
+
+.form-data {
+    padding: 20px 30px;
+}
+.form-data {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+
+}
+.form-data {
+    width: 49%;
+}
+#massage {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    margin: 3px auto;
+    border-radius: 6px;
+    border: 1px solid #ccc6c6;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+button {
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 999px;
+    position: absolute;
+    /* left: calc(45% - 30px); */
+    margin: 5px auto;
+    display: flex;
+    background: rgb(122, 161, 245);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+.form-data:focus {
+    border: 2px solid rgb(230, 230, 230);
+}
+.form-data::placeholder {
+    transition: translate 0.4s ease-in-out;
+}
+.form-data:focus::placeholder {
+    translate: -10px -15px;
+}
+.form-data:focus {
+    border: 2px solid rgb(230, 230, 230);
+}
+.message {
+    border: 2px solid rgb(230, 230, 230);
+    padding: 30px;
+
+}
+/* .message::placeholder {
+    transition: translate 0.4s ease-in-out;
+} */
+/* .message:hover::placeholder {
+    translate: -10px -15px;
+} */

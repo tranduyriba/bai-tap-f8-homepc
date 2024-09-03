@@ -1,0 +1,87 @@
+/* 
+Quy ước: 
+.container --> Khung bọc có kích thước cố định
+.row --> hàng
+.col-{number} --> Cột với số lượng ô muốn chiếm (number nhận từ 1-12)
+
+Concept 
+Section > Container > Row > Col > Item
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+:root {
+    --container-width: 1200px;
+    --column-space: 20px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+[class^="col-"] {
+    flex-basis: calc(100% / 12 * var(--col-size));
+    max-width: calc(100% / 12 * var(--col-size));
+    padding: 0 10px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(0 - (-1 * var(--column-space) / 2));
+    /* Thay thế cho margin: 0 -10px; */
+}
+
+.col-1 {
+    --col-size: 1;
+}
+
+.col-2 {
+    --col-size: 2;
+}
+
+.col-3 {
+    --col-size: 3;
+}
+
+.col-4 {
+    --col-size: 4;
+}
+
+.col-5 {
+    --col-size: 5;
+}
+
+.col-6 {
+    --col-size: 6;
+}
+
+.col-7 {
+    --col-size: 7;
+}
+
+.col-8 {
+    --col-size: 8;
+}
+
+.col-9 {
+    --col-size: 9;
+}
+
+.col-10 {
+    --col-size: 10;
+}
+
+.col-11 {
+    --col-size: 11;
+}
+
+.col-12 {
+    --col-size: 12;
+}

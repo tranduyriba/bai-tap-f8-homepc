@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ebf5fe;
+    position: relative;
+}
+/* .content-1>div.box {
+    display: flex;
+} */
+.box {
+    background-color: white;
+    width: 25%;
+    height: auto;
+    /* border: 2px solid #ff0000ce; */
+    margin: 20px 20px 0px 20px;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'roboto';
+}
+.box-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.content-1, .content-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+h3 {
+    margin-left: 10px;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    color: #666666;
+}
+a {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+.icon {
+    /* width: 40px;
+    height: 40px; */
+    /* background: rgb(255, 0, 93); */
+    background: linear-gradient(90deg, rgba(255, 0, 93, 1) 0%, rgb(214, 47, 61) 35%, rgba(245, 167, 175, 1) 100%);
+    border-radius: 50%;
+    padding: 15px;
+    color: #fff;
+}
+.icon-box1 {
+    /* width: 40px;
+    height: 40px; */
+    /* background: rgb(255, 0, 93); */
+    background: linear-gradient(90deg, rgba(255, 0, 93, 1) 0%, rgb(214, 47, 61) 35%, rgba(245, 167, 175, 1) 100%);
+    border-radius: 50%;
+    padding: 15px;
+    color: #fff;
+}
+.icon-box2 {
+    /* width: 40px;
+    height: 40px; */
+    /* background: rgb(255, 0, 93); */
+    background: linear-gradient(90deg, rgb(147, 230, 202) 0%, rgb(47, 214, 200) 35%, rgb(115, 214, 176) 100%);
+    border-radius: 50%;
+    padding: 15px;
+    color: #fff;
+}
+.icon-box3 {
+    /* width: 40px;
+    height: 40px; */
+    /* background: rgb(255, 0, 93); */
+    background: linear-gradient(90deg, rgb(218, 161, 40) 0%, rgb(214, 142, 47) 35%, rgb(214, 174, 115) 100%);
+    border-radius: 50%;
+    padding: 15px;
+    color: #fff;
+}
+.box:hover {
+    border: 2px solid red;
+    box-shadow: 3px 3px 30px 3px #3a39392c;
+}

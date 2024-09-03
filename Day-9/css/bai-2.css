@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 70%;
+    margin: 30px auto;
+    background-image: url("https: //fastly.picsum.photos/id/374/200/300.jpg?hmac=O7_6jZztETgk8S2eFcdlCNlqe50qS5u-OW5hs-EoNMo");
+}
+section div.row {
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 30px;
+    gap: 30px 30px;
+    margin-bottom: 30px;
+}
+.box {
+    border: 1px solid gray;
+    padding: 20px 40px;
+    border-radius: 6px;
+    height: 300px;
+    position: relative;
+    /* background: url("https://img.freepik.com/free-photo/man-working-as-paediatrician_23-2151696287.jpg");
+    background-size: cover;
+     */
+     align-content: center;
+     overflow: hidden;
+}
+.icom {
+    margin-bottom: 20px;
+}
+p {
+    line-height: 1.5rem;
+    z-index: 2;
+    position: relative;
+}
+.heading {
+    margin-bottom: 10px;
+}
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+
+}
+.box-border {
+    display: hidden;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+.box-footer {
+    align-items: center;
+    /* display: none; */
+    position: absolute;
+    bottom: -46px;
+    z-index: 2;
+    /* transition: all 0.5s ease-in-out; */
+}
+.box-footer .fa-arrow-right {
+    margin-left: 10px;
+    padding: 13px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+.background-phu{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: transparent;
+    background-size: cover;
+    border: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.filter{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.box:hover .box {
+    background: red;
+}
+/* .box::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    background-image: url("https://img.freepik.com/free-photo/man-working-as-paediatrician_23-2151696287.jpg");
+    background-size: cover;
+    display: none;
+} */
+
+.box:hover .box-border {
+    scale: 0.9 0.8;
+    border: 2px solid #ffffff79;
+    z-index: 2;
+}
+.box:hover .filter {
+    background: rgba(116, 65, 18, 0.719);
+}
+.box:hover .bg-phu-1 {
+    background-image: url("https://img.freepik.com/free-photo/healthcare-workers-preventing-virus-quarantine-campaign-concept-cheerful-friendly-asian-female-physician-doctor-with-clipboard-daily-checkup-standing-white-background_1258-107867.jpg");
+    background-size: cover;
+}
+.box:hover .bg-phu-2 {
+    background-image: url("https://img.freepik.com/free-photo/doctor-are-well-good-taken-care-elderly-patients-hospital-bed-patients-feel-happiness-medical-healthcare-concept_1150-21713.jpg");
+    background-size: cover;
+}
+.box:hover .bg-phu-3 {
+    background-image: url("https://img.freepik.com/free-photo/man-working-as-paediatrician_23-2151696287.jpg");
+    background-size: cover;
+}
+.box:hover .bg-phu-4 {
+    background-image: url("https://img.freepik.com/free-photo/image-smiling-asian-doctor-dermatologist-shows-healthy-skin-posing-cute-camera-standing-medical-uniform-white-background_1258-83377.jpg");
+    background-size: cover;
+}
+.box:hover .bg-phu-5 {
+    background-image: url("https://img.freepik.com/free-photo/examining-senior-patient-with-stethoscope_1098-16837.jpg");
+    background-size: cover;
+}
+.box:hover .bg-phu-6 {
+    background-image: url("https://img.freepik.com/free-photo/man-working-as-paediatrician_23-2151696245.jpg");
+    background-size: cover;
+}
+.box:hover .heading {
+    color: #fff;
+    transform: translateY(-85%);
+    transition: transform 0.4s ease-in-out;
+}
+.box:hover .mo-ta {
+    color: #fff;
+    transform: translateY(-65%);
+    transition: transform 0.4s ease-in-out;
+}
+.box:hover .box-footer  {
+    /* display: block;
+    transform: transteX(50%);
+    transition: transform 0.4s ease-in-out;
+    position: absolute;
+    bottom: 45px; */
+    bottom: 45px;
+    transition: bottom 0.4s ease-in-out;
+
+}

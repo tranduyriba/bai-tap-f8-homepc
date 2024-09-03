@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Asap;
+}
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+.header {
+    display: flex;
+    justify-content:stretch;
+}
+h2 {
+    font-size: 18px;
+    width: 50%;
+}
+.line {
+    border-top: 1px solid #000;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style-type: none;
+    background: #e5e5e5;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    text-align: center;
+    position: inherit;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+li:hover {
+    background: #af7b37;
+    color: #fff;
+}
+li > .mo-ta {
+ font-style: italic;
+ font-size: 14px;
+ margin: 5px 0px
+}
+.conten-box {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    
+}
+.box {
+    width: 100%;
+    height: 250px;
+    /* padding-top: 56.25%; */
+    margin: 0px 10px;
+    border: 1px solid blue;
+    position: relative;
+    border-radius: 8px;
+}
+.h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+}
+.box-mo-ta {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+}
+.so-lieu {
+    font-weight: 600;
+    color: #fff;
+}
+.box1 {
+    background-image: url('https://cdn.studyinchina.io/school/ec100772-9f53-41f5-9994-7df229410a0a.jpeg');
+    background-size: cover;
+}
+.box2 {
+    background-image: url('https://cdn.studyinchina.io/school/72f21a2b-5b10-4db5-9670-c373ae7bebf5.jpeg');
+    background-size: cover;
+}
+.box3 {
+    background-image: url('https://cdn.studyinchina.io/school/2519aa3c-7af8-4f3e-aa9d-7e68ced614a5.jpeg');
+    background-size: cover;
+}
+.box4 {
+    background-image: url('https://cdn.studyinchina.io/school/a23099f0-a401-422f-8083-d89c365c1257.jpeg');
+    background-size: cover;
+}
+.box5 {
+    background-image: url('https://cdn.studyinchina.io/school/ca7f4b0a-239e-4bc3-a2d3-3b38de9d76aa.jpeg');
+    background-size: cover;
+}
+.box6 {
+    background-image: url('https://cdn.studyinchina.io/school/cef80014-47c3-4b25-92c4-be68b6f908d7.jpeg');
+    background-size: cover;
+}
+.box .overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: #00000071;
+}
+
+.box:hover .overlay {
+    display: block;
+    z-index: 1;
+}

@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f1f1f1;
+}
+section {
+    width: 40%;
+    border: 1px solid red;
+    position: relative;
+    margin: auto;
+    background: #ffffff;
+    margin-top: 300px; 
+    justify-content: start;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}
+.tab {
+    padding: 6px 12px;
+}
+.tab:hover {
+    background: #0e72f5;
+    color: #fff;
+    border: 1px solid blueviolet;
+}
+.tab-content {
+    padding: 40px;
+    width: 100%;
+    border: 1px solid blue;
+    position: absolute;
+    height: 300px;
+    background: #e0f1ed;
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+    transition-timing-function: ease-in-out;
+    transition: all 2s;
+}
+
+#tab-1:checked ~ .tab-1-content {
+    transform: skew(0deg);
+    transition: all 0.4s ease;
+    display: block;
+    background: #adf5c2;
+}
+#tab-2:checked ~ .tab-2-content {
+    transform: skew(0deg);
+    transition: all 0.4s ease;
+    display: block;
+    background: #ffc7c7;
+}
+#tab-3:checked ~ .tab-3-content {
+    transform: skew(0deg);
+    transition: all 0.4s ease;
+    display: block;
+    background: #fac8f7;
+}
+#tab-4:checked ~ .tab-4-content {
+    transform: skew(0deg);
+    transition: all 0.4s ease;
+    display: block;;
+    background: #ffee90;
+}
+
+.table-area {
+    padding: 10px 20px;
+    width: 100%;
+}
+@keyframes open {
+    left: 100%;
+    transform: skew(0)deg;
+    transition: transform 0.5s ease;
+}
+a: {
+    background: #0e72f5;
+}

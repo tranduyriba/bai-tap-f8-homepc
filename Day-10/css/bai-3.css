@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* section {
+    background: rgb(48, 48, 48);
+    position: absolute;
+    inset: 0;
+}
+.la-thu {
+    height: 150px;
+    width: 200px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 500px;
+    border-top: 10px dashed red;
+    transform: rotateX(45deg)
+} */
+.phong-bi {
+    padding: 500px;
+    width: 100vw;
+    border: 1px solid blue;
+    position: relative;
+    
+}
+.envelop {
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    border-color: grey;
+    border-style: solid;
+    border-top: 100px solid #f4f9f9;
+    border-right: 150px solid #A4EBF3;
+    border-bottom: 100px solid #A4EBF3;
+    border-left: 150px solid #CCF2F4;
+    margin: 0 auto;
+    transition: all 0.4s ease;  
+    position: relative;
+    z-index: 3;
+}
+.dau-thu {
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    border-color: grey;
+    border-style: solid;
+    border-top: 100px solid #f4f9f9;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 150px solid transparent;
+    margin: 0 auto;
+    transition: all 0.4s ease;  
+    position: absolute;
+    left: 820px;
+    z-index: 4;
+    transform: rotateX(0deg);
+    transform-origin: 0 0;
+}
+
+/* .overlay-2 {
+
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    border-color: grey;
+    border-style: solid;
+    border-top: 100px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 150px solid #CCF2F4;
+    margin: 0 auto;
+    transform: translateY(-100%);
+    transition: all 0.4s ease;
+    z-index: 5;
+} */
+.shadow {
+    /* border: 1px solid #000; */
+    display: block;
+    height: 20px;
+    width: 180px;
+    background: #00000081;
+    border-radius: 999px;
+    transform: skew(-30deg);
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: all 0.4s ease;
+}
+/* Chưa biết sử dụng hiệu ứng cho phần này */
+.la-thu {
+    width: 250px;
+    height: 150px;
+    border: 5px solid red;
+    background: #f4f9f9;
+    z-index: 4;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateY(-180px) translateX(350px);
+    transition: all 0.4s ease;
+    z-index: 5;
+}
+
+.overlay-1 {
+
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    border-color: grey;
+    border-style: solid;
+    border-top: 100px solid transparent;
+    border-right: 150px solid #A4EBF3;
+    border-bottom: 100px solid #A4EBF3;
+    border-left: 150px solid #CCF2F4;
+    margin: 0 auto;
+    transform: translateY(200px);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 99;
+}
+.overlay-1:hover  {
+    transform: translateY(240px);
+    transition: all 0.4s ease;
+}
+.overlay-1:hover ~ .dau-thu  {
+    transform: translateY(240px);
+    transition: all 0.4s ease;
+    transform: rotateX(180deg) translateY(-40px);
+    
+}
+.overlay-1:hover ~ .la-thu  {
+    transform: translateY(-205px) translateX(350px);
+    transition: all 0.4s ease;
+}
+.overlay-1:hover ~ .envelop  {
+    transform: translateY(40px);
+    transition: all 0.4s ease;
+}
+.overlay-1:hover ~ .shadow {
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+.la-thu:hover {
+    transform: translateY(-55px);
+    transition: all 0.4s ease;
+}

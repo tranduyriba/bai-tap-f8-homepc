@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 6 - Bài 1</title>
+    <link rel="stylesheet" href="./css/bai-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  </head>
+  <body>
+    <section>
+      <h2>Hey there</h2>
+      <div class="dsr">
+        <span style="color: red"> We'd like to hear from you. </span>
+        <span
+          >Send us your mesage or just say hy with our contact form or directly
+          via phone, we love to chat.</span
+        >
+      </div>
+
+      <form action="">
+        <div>
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              id="your-name"
+              name="your-name"
+              placeholder="Your name"
+            />
+        </div>
+        <div>
+          <i class="far fa-envelope"></i>
+          <input
+            type="text"
+            id="domain"
+            name="domain"
+            placeholder="your@domain.com"
+          />
+        </div>
+        <div>
+          <i class="fas fa-mobile-alt"></i>
+          <input
+            type="text"
+            id="telephone"
+            name="telephone"
+            placeholder="+44 00 123"
+          />
+        </div>
+        <div>
+          <i class="fas fa-book"></i>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+          />
+        </div>
+        <div>
+          <i class="fas fa-comment-alt"></i>
+          <textarea
+            rows="5"
+            cols="30"
+            itemid="massage"
+            name="massage"
+            placeholder="Message"
+            id=""
+          ></textarea>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <span>Send me a copy of this message</span>
+          </label>
+          <label class="btn">
+            <button id="btn" type="submit">SEND</button>
+          </label>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
