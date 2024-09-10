@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19 - Bài 3</title>
+  </head>
+  <body>
+    <h1>Tính giá trị biểu thức</h1>
+    <script>
+        function tinhGiaTri(n) {
+          let s = 0;
+          for (let i = 1; i <= n; i++) {
+            s += i * (i + 1);
+          }
+          return s;
+      }
+      let n = prompt("Nhập vào giá trị N mà bạn muốn");
+      let ketQua = tinhGiaTri(n);
+      alert(`kết quả của biểu thức là ${ketQua}`);
+    </script>
+  </body>
+</html>

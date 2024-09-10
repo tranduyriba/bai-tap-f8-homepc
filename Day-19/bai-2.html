@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19 - Bài 2</title>
+  </head>
+  <body>
+    <h1>Tính tiền Điện</h1>
+    <script>
+        
+        function tinhTien(s) {
+        let tienDien = 0;
+        if (s > 0 && s <= 50) {
+            tienDien = s * 1678;
+        } else if (s > 50 && s <= 100) {
+            tienDien = 50 * 1678 + (s - 50) * 1734;
+        } else if (s > 100 && s <= 200) {
+            tienDien = 50 * 1678 + 50 * 1734 + (s - 100) * 2014;
+        } else if (s > 200 && s <= 300) {
+            tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + (s - 200) * 2536;
+        } else if (s > 300 && s <= 400) {
+            tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 * (s - 300) * 2834;
+        } else {
+            tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 * 100 * 2834 + (s - 400) * 2927;
+        }
+        return tienDien;
+      }
+      let s = prompt("Nhập vào tổng số điện đã sử dụng (kwh)");
+      const tongTien = tinhTien(s);
+      console.log(`Tổng số điện đã tiêu thụ ${s}kwh, số tiền cần phải thanh toán là ${tongTien}đ`);
+    </script>
+  </body>
+</html>

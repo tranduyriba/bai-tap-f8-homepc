@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19 - Bài 1</title>
+  </head>
+  <body>
+    <h1>Tính tiền Taxi</h1>
+    <script>
+        
+        function chiPhi(s) {
+        let tienXe = 0;
+        if (s <= 0) {
+            tienXe = 0;
+        } else if (s > 0 && s <= 1) {
+            tienXe = 1 * 15000;
+        } else if (s > 1 && s <= 5) {
+            tinhTien = 15000 + (s - 1) * 13500;
+        } else {
+            tienXe = 15000 + 4 * 13500 + (s - 5) * 11000;
+        }
+        
+        if (s > 120) {
+            tienXe *= 0.9;
+        }
+        return tienXe;
+      }
+      let s = prompt("Nhập vào quãng đường bạn đã đi (km)");
+      const tongTien = chiPhi(s);
+      console.log(`Tổng quãng đường đã đi là ${s}km, số tiền cần phải thanh toán là ${tongTien}đ`);
+      
+    </script>
+  </body>
+</html>
