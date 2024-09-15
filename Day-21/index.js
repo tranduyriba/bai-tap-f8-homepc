@@ -9,9 +9,9 @@ let text =
 
         for (let i = 0; i < words.length; i++) {
           if (i === currentWordIndex) {
-            result += '<span style="color: red;">' + words[i] + "</span> ";
+            result += '<span style="color: red; font-size: 23px;">' + words[i] + "</span> ";
           } else {
-            result += "<span>" + words[i] + "</span> ";
+            result += '<span style="font-size: 20px;">' + words[i] + "</span> ";
           }
         }
         document.open();
